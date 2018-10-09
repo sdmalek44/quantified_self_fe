@@ -5,7 +5,16 @@
     <title>Quantified Self - Manage Foods</title>
   </head>
   <body>
-      <a href="index.html"><button class="default-button">Meal Diary</button></a>
+      <h2>Enter New Food</h2>
+      <p>Name:</p>
+      <input type="text" id="food-name-box">
+      <p>Calories:</p>
+      <input type="text" id="food-calories-box">
+      <br/>
+      <button id="food-create-button">Create Food</button>
+      <h2>Foods:</h2>
+      <div id="food-list">
+      </div>
       <script
         src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
       </script>
