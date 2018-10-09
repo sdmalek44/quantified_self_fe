@@ -5,10 +5,25 @@
   <title>Quantified Self - Diary</title>
 </head>
 <body>
-      <a href="foods.html"><button class="default-button">Create New</button></a>
-    <script
+  <h3>Add Food to Meal</h3>
+  <article>
+      <h4>Select Meal</h4>
+      <select>
+        <option value="1">Breakfast</option>
+        <option value="2">Snack</option>
+        <option value="3">Lunch</option>
+        <option value="4">Dinner</option>
+      </select>
+      <h4>Select Foods</h4>
+        <div class=""><span>Name </span><span>Calories</span></div>
+        <div id="check-box" class="check-it">
+        </div>
+    <button id="add-to-meal" type="submit">Add Foods</button>
+  </article>
+  <a href="foods.html"><button class="default-button">Create New</button></a>
+  <script
     src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
   </script>
-  <script src="main.bundle.js"></script>
+  <script src="index.html.bundle.js"></script>
 </body>
 </html>
