@@ -3,7 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Quantified Self - Manage Foods</title>
+    <link rel="stylesheet" href="lib/navbar.css">
+    <link rel="stylesheet" href="lib/stylesheet.css">
   </head>
+
+  <header>
+    <a href="index.html">Meals</a> <nobr class="selected">Foods</nobr>
+  </header>
+
   <body>
       <h2>Enter New Food</h2>
       <p>Name:</p>
@@ -11,7 +18,7 @@
       <p>Calories:</p>
       <input type="text" id="food-calories-box">
       <br/>
-      <button id="food-create-button">Create Food</button>
+      <button id="food-create-button" class="add">Create Food</button>
       <h2>Foods:</h2>
       <div id="food-list">
       </div>

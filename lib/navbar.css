@@ -1,0 +1,20 @@
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 400%;
+  width: 100%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nobr {
+  text-decoration: underline;
+}
