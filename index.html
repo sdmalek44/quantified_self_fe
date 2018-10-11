@@ -4,33 +4,38 @@
   <meta charset="utf-8">
   <title>Quantified Self - Diary</title>
   <link rel="stylesheet" href="lib/navbar.css">
+  <link rel="stylesheet" href="lib/index.css">
 </head>
-
-<header>
-  <nobr class="selected">Meals</nobr> <a href="foods.html">Foods</a>
-</header>
-
 <body>
-  <h3>Add Food to Meal</h3>
-  <article>
-      <h4>Select Meal</h4>
-      <select>
-        <option value="1">Breakfast</option>
-        <option value="2">Snack</option>
-        <option value="3">Lunch</option>
-        <option value="4">Dinner</option>
-      </select>
-      <h4>Select Foods</h4>
-        <div class=""><span>Name </span><span>Calories</span></div>
-        <div id="check-box" class="check-it">
-          
-        </div>
-    <button id="add-to-meal" type="submit">Add Foods</button>
-  </article>
-  <article id="meals" class="">
 
-  </article>
-  <a href="foods.html"><button class="default-button">Create New</button></a>
+  <header>
+    <nobr class="selected">Meals</nobr><a href="foods.html">Foods</a>
+  </header>
+  <section class="middle">
+
+    <article class="left-article">
+      <h3>Add Food to Meal</h3>
+      <h4>Select Meal</h4>
+        <select>
+          <option value="1">Breakfast</option>
+          <option value="2">Snack</option>
+          <option value="3">Lunch</option>
+          <option value="4">Dinner</option>
+        </select>
+        <h4>Select Foods</h4>
+          <div class=""><span>Name </span><span>Calories</span></div>
+          <div id="check-box" class="check-it">
+
+          </div>
+      <button id="add-to-meal" type="submit">Add Foods</button>
+    </article>
+    <aside class="right-article">
+      <h1>Meal Diary</h1>
+      <article id="meals" class="meals-article">
+
+      </article>
+    </aside>
+  </section>
   <script
     src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
   </script>
