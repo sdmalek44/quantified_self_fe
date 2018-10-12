@@ -13,7 +13,7 @@ body {
 
 div.food-container {
   background-color: #6D2B2B;
-  border-radius: 10px;
+  outline: 1px solid white;
   width: 50%;
   margin-top: 15px;
 }
