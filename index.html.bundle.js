@@ -63,7 +63,7 @@
 	  var checkBox = $('#check-box');
 	  checkBox.html('');
 	  for (var i in foods) {
-	    $('#check-box').append('\n      <article class="food-row">\n        <input type="checkbox" class="checkbox" id="' + foods[i].id + '">\n        <span>' + foods[i].name + '</span>\n        <span>' + foods[i].calories + '</span>\n      </article>\n      ');
+	    $('#check-box').append('\n      <article class="food-row fake-b">\n        <input type="checkbox" class="checkbox" id="' + foods[i].id + '">\n        <span>' + foods[i].name + '</span>\n        <span class="fake-l">' + foods[i].calories + '</span>\n      </article>\n      ');
 	  }
 	}
 
@@ -95,7 +95,7 @@
 	    calorieCount += parseInt(mealFoods[i].calories);
 	    var button = document.createElement('button');
 	    button.setAttribute('id', mealFoods[i].id);
-	    button.innerHTML = 'Delete';
+	    button.innerHTML = 'remove';
 	    $(button).on('click', function () {
 	      request('/api/v1/meals/' + meal.id + '/foods/' + this.id, 'DELETE').then(function () {
 	        populateMeals();
