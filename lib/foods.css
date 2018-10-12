@@ -185,8 +185,12 @@ button:hover {
   align-items: center;
   justify-content: space-between;
   border: 2px solid rgba(101, 47, 45, .9);
-  border-radius: 15px;
 }
+
+.hidden-container {
+  display: none;
+}
+
 
 .food-calories {
   font-size: 15px;
