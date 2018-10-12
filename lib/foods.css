@@ -72,7 +72,8 @@ a.food-l:hover {
   color: black;
   margin-bottom: 60px;
   margin-top: 85px;
-  padding-bottom: 40px;
+  padding-bottom: 130px;
+  min-height: 100%;
 }
 
 .inner-mid {
@@ -86,6 +87,7 @@ a.food-l:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .right-side {
@@ -185,8 +187,12 @@ button:hover {
   align-items: center;
   justify-content: space-between;
   border: 2px solid rgba(101, 47, 45, .9);
-  border-radius: 15px;
 }
+
+.hidden-container {
+  display: none;
+}
+
 
 .food-calories {
   font-size: 15px;
@@ -214,4 +220,11 @@ footer {
   height: 60px;
   position: fixed;
   bottom: 0;
+}
+
+.filter-box {
+  margin-top: 10px;
+  margin-bottom:15px;
+  width: 200px;
+  height: 20px;
 }
