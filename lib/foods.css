@@ -72,7 +72,8 @@ a.food-l:hover {
   color: black;
   margin-bottom: 60px;
   margin-top: 85px;
-  padding-bottom: 40px;
+  padding-bottom: 130px;
+  min-height: 100%;
 }
 
 .inner-mid {
@@ -86,6 +87,7 @@ a.food-l:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .right-side {
@@ -218,4 +220,11 @@ footer {
   height: 60px;
   position: fixed;
   bottom: 0;
+}
+
+.filter-box {
+  margin-top: 10px;
+  margin-bottom:15px;
+  width: 200px;
+  height: 20px;
 }

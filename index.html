@@ -1,56 +1,55 @@
-<!DOCTYPE html>
+
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Quantified Self - Diary</title>
-<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Great+Vibes" rel="stylesheet">
-<link rel="stylesheet" href="lib/index.css">
-</head>
-<body>
-  <header>
-    <section class="center-nav">
-      <div class="logo-box fl-c">Quantified Self</div>
-      <div class="link-box">
-        <div class="selected fl-c">Meals</div>
-        <a href="foods.html" class="food-l fl-c">Foods</a>
-      </div>
-    </section>
-  </header>
-  <section class="middle">
-
-    <article class="left-article">
-      <div class="sec-8">
-        <h3 class="sec-title sec">Add Food to Meal</h3>
-      </div>
-      <section class="food-select">
-        <div class="outer-button marg-bot"><div class="sub-title">Select Meal</div></div>
-        <div class="outer-button marg-bot">
-          <select id="meal-container">
-          </select>
+  <head>
+    <meta charset="utf-8">
+    <title>Quantified Self - Diary</title>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Great+Vibes" rel="stylesheet">
+    <link rel="stylesheet" href="lib/index.css">
+  </head>
+  <body>
+    <header>
+      <section class="center-nav">
+        <div class="logo-box fl-c">Quantified Self</div>
+        <div class="link-box">
+          <div class="selected fl-c">Meals</div>
+          <a href="foods.html" class="food-l fl-c">Foods</a>
         </div>
-        <div class="outer-button marg-bot border flat-top"><div class="sub-title">Select Foods</div></div>
-        <section class="check-box-table">
-          <div class="food-row row-title fake-b">
-            <div class="blank"></div>
-            <span>Name</span>
-            <span class="fake-l">Calories</span>
-          </div>
-          <div id="check-box" class="check-it"></div>
-        </section>
-        <div class="outer-button"><button id="add-to-meal" type="submit">Add Foods</button></div>
       </section>
-    </article>
-    <aside class="right-article">
-      <h3 class="sec-title">Meal Diary</h3>
-      <article id="meals" class="meals-article">
-
+    </header>
+    <section class="middle">
+      <article class="left-article">
+        <div class="sec-8">
+          <h3 class="sec-title sec">Add Food to Meal</h3>
+        </div>
+        <section class="food-select">
+          <div class="outer-button marg-bot border"><div class="sub-title">Select Meal</div></div>
+          <div class="outer-button marg-bot">
+            <select id="meal-container" class="drop-down">
+            </select>
+          </div>
+          <div class="outer-button marg-bot border flat-top"><div class="sub-title">Select Foods</div></div>
+          <section class="check-box-table">
+            <div class="food-row row-title fake-b">
+              <div class="blank"></div>
+              <span>Name</span>
+              <span class="fake-l">Calories</span>
+            </div>
+            <div id="check-box" class="check-it"></div>
+          </section>
+          <div class="outer-button"><button id="add-to-meal" type="submit">Add Foods</button></div>
+        </section>
       </article>
-    </aside>
-  </section>
-  <footer></footer>
-  <script
-    src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
-  </script>
-  <script src="index.html.bundle.js"></script>
-</body>
+      <aside class="right-article">
+        <h3 class="sec-title">Meal Diary</h3>
+        <article id="meals" class="meals-article">
+
+        </article>
+      </aside>
+    </section>
+    <footer></footer>
+    <script
+      src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
+    </script>
+    <script src="index.html.bundle.js"></script>
+  </body>
 </html>
