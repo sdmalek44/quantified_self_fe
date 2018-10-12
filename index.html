@@ -3,27 +3,40 @@
 <head>
   <meta charset="utf-8">
   <title>Quantified Self - Diary</title>
-  <link rel="stylesheet" href="lib/navbar.css">
-  <link rel="stylesheet" href="lib/index.css">
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Great+Vibes" rel="stylesheet">
+<link rel="stylesheet" href="lib/index.css">
 </head>
 <body>
-
   <header>
-    <nobr class="selected">Meals</nobr><a href="foods.html">Foods</a>
+    <section class="center-nav">
+      <div class="logo-box fl-c">Quantified Self</div>
+      <div class="link-box">
+        <div class="selected fl-c">Meals</div>
+        <a href="foods.html" class="food-l fl-c">Foods</a>
+      </div>
+    </section>
   </header>
   <section class="middle">
 
     <article class="left-article">
-      <h3 class="sec-title">Add Food to Meal</h3>
+      <div class="sec-8">
+        <h3 class="sec-title sec">Add Food to Meal</h3>
+      </div>
       <section class="food-select">
         <div class="outer-button marg-bot"><div class="sub-title">Select Meal</div></div>
         <div class="outer-button marg-bot">
           <select id="meal-container">
           </select>
         </div>
-        <div class="outer-button marg-bot"><div class="sub-title">Select Foods</div></div>
-        <div class="food-row row-title"><div class="blank"></div><span>Name</span><span>Calories</span></div>
-        <div id="check-box" class="check-it"></div>
+        <div class="outer-button marg-bot border flat-top"><div class="sub-title">Select Foods</div></div>
+        <section class="check-box-table">
+          <div class="food-row row-title fake-b">
+            <div class="blank"></div>
+            <span>Name</span>
+            <span class="fake-l">Calories</span>
+          </div>
+          <div id="check-box" class="check-it"></div>
+        </section>
         <div class="outer-button"><button id="add-to-meal" type="submit">Add Foods</button></div>
       </section>
     </article>
@@ -34,6 +47,7 @@
       </article>
     </aside>
   </section>
+  <footer></footer>
   <script
     src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
   </script>

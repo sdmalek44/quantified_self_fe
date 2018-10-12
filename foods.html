@@ -3,14 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Quantified Self - Manage Foods</title>
-    <link rel="stylesheet" href="lib/navbar.css">
-    <link rel="stylesheet" href="lib/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Great+Vibes" rel="stylesheet">
+    <link rel="stylesheet" href="lib/foods.css">
   </head>
-
-  <header>
-    <a href="index.html">Meals</a> <nobr class="selected">Foods</nobr>
-  </header>
-
   <body>
       <h2>Enter New Food</h2>
       <p>Name:</p>
@@ -23,10 +18,42 @@
       <input type=text id="filter-foods" placeholder="Filter Foods">
       <div id="food-list">
       </div>
+    <header>
+      <section class="center-nav">
+        <div class="logo-box fl-c">Quantified Self</div>
+        <div class="link-box">
+          <a href="index.html" class="food-l fl-c">Meals</a>
+          <div class="selected fl-c">Foods</div>
+        </div>
+      </section>
+    </header>
+    <section class="middle">
+      <article class="inner-mid">
+        <aside class="left-side">
+          <article class="left-card">
+            <div class="card-title">Enter New Food</div>
+            <div class="card-body">
+              <p class="no-bmp">Name</p>
+              <input type="text" id="food-name-box" class="no-bmp text-box">
+              <p class="no-bmp">Calories</p>
+              <input type="text" id="food-calories-box" class="no-bmp text-box">
+              <button id="food-create-button" class="add">Create Food</button>
+            </div>
+          </article>
+        </aside>
+        <aside class="right-side">
+          <article class="right-card">
+            <div class="card-title">Foods</div>
+            <div id="food-list" class="card-body"></div>
+          </article>
+        </aside>
+      </article>
+    </section>
+    <footer>
+    </footer>
       <script
         src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
       </script>
       <script src="foods.html.bundle.js"></script>
-    </div>
   </body>
 </html>
