@@ -7,10 +7,13 @@ body {
 
 header {
   height: 85px;
+  width: 100%;
   display: flex;
   justify-content: center;
   background-color: black;
   font-size: 25px;
+  position: fixed;
+  top: 0;
 }
 
 a {
@@ -67,27 +70,28 @@ a.food-l:hover {
   display: flex;
   justify-content: center;
   color: black;
+  margin-bottom: 60px;
+  margin-top: 85px;
+  padding-bottom: 40px;
 }
 
 .inner-mid {
   width: 75%;
-  border: 2px solid blue;
-  display: flex;
 }
 
 .left-side {
-  width: 50%;
-  border: 2px solid red;
+  position: fixed;
+  width: 35%;
+  height: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .right-side {
-  width: 49%;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  border: 2px solid blue;
+  justify-content: flex-end;
 }
 
 .left-card {
@@ -128,21 +132,43 @@ a.food-l:hover {
   height: 20px;
 }
 
+button {
+  border: 1px solid rgba(101, 47, 45, .9);
+}
+
 button#food-create-button {
   margin-top: 20px;
   margin-bottom: 20px;
-  height: 30px;
-  width: 100px;
+  height: 35px;
+  width: 130px;
   border-radius: 15px;
+  font-size: 15px
+
 }
 
+button.change {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 25px;
+  width: 80px;
+  border-radius: 15px;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+button:hover {
+  background-color: black;
+  color: #f5f5f5;
+  border: none;
+}
 .right-card {
   background-color: rgba(255, 255, 255, .9);
   border-radius: 15px;
-  width: 80%;
+  width: 40%;
   padding-bottom: 10px;
   margin-top: 50px;
   font-size: 20px;
+  margin-right: 5%;
 }
 
 .card-body {
@@ -152,14 +178,12 @@ button#food-create-button {
 .food-container {
   border: 2px solid ;
   padding-top: 10px;
-  padding-bottom: 10px;
   margin-bottom: 15px;
   width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
   border: 2px solid rgba(101, 47, 45, .9);
   border-radius: 15px;
 }
@@ -175,4 +199,19 @@ button#food-create-button {
 
 p {
   margin: 0;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid rgba(101, 47, 45, .9);
+  height: 20px;
+  padding-left: 5px;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
 }
