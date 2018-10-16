@@ -112,12 +112,19 @@
 	  request('/api/v1/meals').then(function (response) {
 	    return response.json();
 	  }).then(function (meals) {
+	    var mealContainer = document.getElementById('meal-container');
+	    mealContainer.innerHTML = "";
 	    $('article#meals').empty();
 	    var totalCalorieCount = 0;
 	    for (var i in meals) {
+	      var meal = meals[i];
+	      var newOption = document.createElement('option');
+	      newOption.value = meal.id;
+	      newOption.innerHTML = meal.name;
+	      mealContainer.appendChild(newOption);
 	      var calorieCount = populateMeal(meals[i]);
 	      totalCalorieCount += calorieCount;
-	      $('#meals table#' + meals[i].id + ' tbody').append('\n          <tr>\n            <td>Total Calories</td>\n            <td>' + calorieCount + '</td>\n          </tr>\n          <tr>\n            <td>Remaining Calories</td>\n            <td>' + (2000 - calorieCount) + '</td>\n          </tr>\n          ');
+	      $('#meals table#' + meal.id + ' tbody').append('\n          <tr>\n            <td>Total Calories</td>\n            <td>' + calorieCount + '</td>\n          </tr>\n          <tr>\n            <td>Remaining Calories</td>\n            <td>' + (2000 - calorieCount) + '</td>\n          </tr>\n          ');
 	    }
 	    populateTotalCalories(totalCalorieCount);
 	  });
@@ -136,7 +143,7 @@
 	"use strict";
 
 	function request(uri, method, body) {
-	  return fetch('https://rails-quantified-self.herokuapp.com' + uri, {
+	  return fetch('https://sheltered-retreat-73227.herokuapp.com' + uri, {
 	    method: method,
 	    headers: {
 	      "Content-Type": "application/json"

@@ -46,15 +46,40 @@
 
 	'use strict';
 
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
 	var request = __webpack_require__(1).request;
 
 	retrieveFoods();
-	var foodButton = document.getElementById('food-create-button');
-	$(foodButton).on('click', function () {
+	$('#food-create-button').on('click', function () {
 	  addFood();
 	  document.getElementById('food-name-box').value = "";
 	  document.getElementById('food-calories-box').value = "";
 	});
+
+	$('#filter-foods').on('input', function () {
+	  filterFoods();
+	});
+
+	function filterFoods() {
+	  var foodList = document.getElementById('food-list').childNodes;
+	  for (var i in foodList) {
+	    var foodContainer = foodList[i];
+	    if ((typeof foodContainer === 'undefined' ? 'undefined' : _typeof(foodContainer)) == "object" && foodContainer.hasChildNodes()) {
+	      var filterText = document.getElementById('filter-foods').value.toLowerCase();
+	      if (filterText != "") {
+	        var foodName = foodContainer.childNodes[0].innerHTML.toLowerCase();
+	        if (foodName.includes(filterText)) {
+	          foodContainer.className = "food-container";
+	        } else {
+	          foodContainer.className = "hidden-container";
+	        }
+	      } else {
+	        foodContainer.className = "food-container";
+	      }
+	    }
+	  }
+	}
 
 	function retrieveFoods() {
 	  request('/api/v1/foods').then(function (response) {
@@ -109,6 +134,7 @@
 	  for (var i in foods) {
 	    _loop();
 	  }
+	  filterFoods();
 	}
 
 	function clearEditMenu(foodContainer, foodEdit, editButton) {
@@ -162,7 +188,7 @@
 	  var body = {
 	    food: {
 	      "name": nameBox.value,
-	      "calories": caloriesBox.value
+	      "calories": parseInt(caloriesBox.value)
 	    }
 	  };
 	  request('/api/v1/foods/' + foodId, "PATCH", body).then(function () {
@@ -197,7 +223,7 @@
 	"use strict";
 
 	function request(uri, method, body) {
-	  return fetch('https://rails-quantified-self.herokuapp.com' + uri, {
+	  return fetch('https://sheltered-retreat-73227.herokuapp.com' + uri, {
 	    method: method,
 	    headers: {
 	      "Content-Type": "application/json"
