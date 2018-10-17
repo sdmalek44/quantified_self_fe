@@ -4,7 +4,7 @@ module.exports = {
   entry: {
     "index.html": "./lib/index.js",
     "foods.html": "./lib/foods.js",
-    "calender.html": "./lib/calender.js",
+    "calendar.html": "./lib/calendar.js",
     test: "mocha!./test/index.js"
   },
   output: {
