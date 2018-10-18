@@ -300,3 +300,7 @@ button:hover {
 .no-l {
   border-left: 0;
 }
+
+.fs-35 {
+  font-size: 35px;
+}
