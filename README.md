@@ -1,6 +1,9 @@
 # Quantified Self Front-end
 
-Quantified Self is a calorie tracking application where a user can add meals, foods to meals, and see what meals they had on what date. 
+Quantified Self is a calorie tracking application where a user can add meals, foods to meals, and see what meals they had on what date.  
+
+### Link  
+http://quant-self.surge.sh
 
 ## Built With
 
@@ -9,6 +12,7 @@ Quantified Self is a calorie tracking application where a user can add meals, fo
 * [Express](https://expressjs.com/)
 * [Mocha](https://mochajs.org/)
 * [Chai](https://chaijs.com/)  
+
 
 ### Meals Page  
 <img width="1680" alt="screen shot 2018-10-18 at 10 39 33 am" src="https://user-images.githubusercontent.com/30483194/47170025-481abb80-d2c2-11e8-91bf-ccaf96653764.png">  
