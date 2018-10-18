@@ -35,7 +35,7 @@ a {
 
 .link-box {
   height: 100%;
-  width: 25%;
+  width: 30%;
   display: flex;
   border-left: 1px solid gray;
 }
@@ -44,6 +44,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 18px;
 }
 
 .food-l {
@@ -227,4 +228,22 @@ footer {
   margin-bottom:15px;
   width: 200px;
   height: 20px;
+}
+
+
+.rl {
+  border-right: 1px solid black;
+}
+
+.lbl {
+  border-left: 1px solid black;
+
+}
+
+.no-r {
+  border-right: 0;
+}
+
+.no-l {
+  border-left: 0;
 }

@@ -1,7 +1,7 @@
 .meal-container {
   margin-top: 10px;
   border-radius: 15px;
-
+  width: 80%;
 }
 
 
@@ -62,4 +62,17 @@
 
 .first-row {
   font-weight: bold;
+}
+
+.rl {
+  border-right: 1px solid black;
+}
+
+.lgl {
+  border-left: 1px solid gray;
+
+}
+
+.no-r {
+  border-right: 0;
 }
