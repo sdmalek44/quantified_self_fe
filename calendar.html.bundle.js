@@ -64,12 +64,17 @@
 	  validDates.forEach(function (date) {
 	    var option = document.createElement('option');
 	    option.innerHTML = date;
+	    option.setAttribute('id', '' + date);
 	    option.value = date;
 	    dropDown.appendChild(option);
 	  });
 	  populateMeals(mealData, dropDown.childNodes[0].value);
+	  var title = document.getElementById("calendar-title");
+	  title.innerHTML = 'Meals from ' + dropDown.childNodes[0].value;
 	  dropDown.addEventListener("change", function () {
 	    populateMeals(mealData, this.value);
+	    var title = document.getElementById("calendar-title");
+	    title.innerHTML = 'Meals from ' + this.value;
 	  });
 	}
 
