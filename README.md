@@ -2,7 +2,7 @@
 
 Quantified Self is a calorie tracking application where a user can add meals, foods to meals, and see what meals they had on what date.  
 
-### Link  
+## Link  
 http://quant-self.surge.sh
 
 ## Built With
