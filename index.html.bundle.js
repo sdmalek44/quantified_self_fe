@@ -143,7 +143,7 @@
 	"use strict";
 
 	function request(uri, method, body) {
-	  return fetch('https://sheltered-retreat-73227.herokuapp.com' + uri, {
+	  return fetch('https://quant-self-api.herokuapp.com' + uri, {
 	    method: method,
 	    headers: {
 	      "Content-Type": "application/json"
